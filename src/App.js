@@ -65,7 +65,7 @@ setSelectedFriend(null)
 
       <Button onClick={handleClick} >{ show ? 'close':'Add friend' }</Button>
       </div>
-      {selectFriend &&  <FormSplitBill selectFriend={selectFriend} onSplitBill={handleSplitBill} />}
+      {selectFriend && <FormSplitBill selectFriend={selectFriend} onSplitBill={handleSplitBill} />}
     
     </div>
   )
