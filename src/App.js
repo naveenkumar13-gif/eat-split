@@ -60,7 +60,7 @@ setSelectedFriend(null)
     <div className='app'>
       <div className='sidebar'>
       < FirendsList  friends={friends} selectFriend={selectFriend} handleSlection={handleSlection}/>
-
+      
      {show && <FormAddFriend  onAddFriends={handleAddFriends} />}
 
       <Button onClick={handleClick} >{ show ? 'close':'Add friend' }</Button>
