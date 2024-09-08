@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import FirendsList from './friendList';
-import Button from './button';
-import FormAddFriend from './formfriend';
-import FormSplitBill from './formBill';
+import FirendsList from '../friendList';
+import Button from '../button';
+import FormAddFriend from '../formfriend';
+import FormSplitBill from '../formBill';
 const initialFriends = [
   {
     id: 118836,
@@ -45,13 +45,13 @@ function handleAddFriends(friend){
 
 function handleSlection(friends){
   // setSelectedFriend(friends)
-  setSelectedFriend((current)=>current?.id=== friends.id ? null : friends)
+  setSelectedFriend((current)=>current?.id === friends.id ? null : friends)
   setshow(false)
 }
 
 
 function handleSplitBill(value){
- setfriends((friends) => friends.map((friend)=>friend.id=== selectFriend.id ? {...friend , balance:friend.balance + value} :friend))
+ setfriends((friends) => friends.map((friend)=>friend.id === selectFriend.id ? {...friend , balance:friend.balance + value} :friend))
 setSelectedFriend(null)
 
 }
